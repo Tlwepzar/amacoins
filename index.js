@@ -11,7 +11,7 @@
 })();
 
 ((pressExchange) => {
-    (showColumns)=> {
+    function showColumns() {
         document.getElementById('exchangeColumns').style.display = 'unset';
         document.getElementById('shopColumns').style.display = 'none';
         document.getElementById('operator1').style.display = 'none';
@@ -19,26 +19,26 @@
         document.getElementById('operator3').style.display = 'none';
     }
 
-    (setRates)=> {
+    function setRates(){
         document.getElementById('value2').value = 1.5876;
         document.getElementById('value4').value = 0.8941;
         document.getElementById('value6').value = 0.7938;
     }
 
-    (setValues)=> {
+    function setValues() {
         document.getElementById('value1').value = 0;
         document.getElementById('value3').value = 0;
         document.getElementById('value5').value = 0;
     }
 
     let exchangeButton = document.getElementById('exchange');
-    exchangeButton.addEventListener('click', showColumns)
-    exchangeButton.addEventListener('click', setRates)
+    exchangeButton.addEventListener('click', showColumns),
+    exchangeButton.addEventListener('click', setRates),
     exchangeButton.addEventListener('click', setValues)
 })();
 
 ((pressShop) => {
-    (showShop)=> {
+    function showShop () {
         document.getElementById('shopColumns').style.display = 'unset'
         document.getElementById('exchangeColumns').style.display = 'none';
     }
@@ -48,7 +48,7 @@
 })();
 
 ((calcKco) => {
-    (calc1)=> {
+    function calc1 () {
         let a = parseFloat(document.querySelector('#value1').value);
         let b = parseFloat(document.querySelector('#value2').value);
         let op = document.querySelector('#operator1').value;
@@ -80,7 +80,7 @@
 })();
 
 ((calcHco)=> {
-    (calc2)=> {
+    function calc2(){
         let a = parseFloat(document.querySelector('#value3').value);
         let b = parseFloat(document.querySelector('#value4').value);
         let op = document.querySelector('#operator2').value;
@@ -111,7 +111,7 @@
 })();
 
 ((calcBco)=> {
-    (calc3)=> {
+    function calc3 () {
         let a = parseFloat(document.querySelector('#value5').value);
         let b = parseFloat(document.querySelector('#value6').value);
         let op = document.querySelector('#operator3').value;
@@ -142,8 +142,8 @@
     
 })();
 
-((buyKco)=> {
-    (buying1)=> {
+(()=> {
+    function buying1() {
         let a = parseFloat(document.querySelector('#value1').value);
         let b = parseFloat(document.querySelector('#value2').value);
         let c = a * b;
@@ -159,8 +159,8 @@
     buy1.addEventListener('click', buying1);
 })();
 
-((buyHco)=> {
-    (buying2)=> {
+(()=> {
+    function buying2(){
         let a = parseFloat(document.querySelector('#value3').value);
         let b = parseFloat(document.querySelector('#value4').value);
         let c = a * b;
@@ -176,8 +176,8 @@
     buy2.addEventListener('click', buying2);
 })();
 
-((buyBco)=> {
-    (buying3) => {
+(()=> {
+    function buying3() {
         let a = parseFloat(document.querySelector('#value5').value);
         let b = parseFloat(document.querySelector('#value6').value);
         let c = a * b;
