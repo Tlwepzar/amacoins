@@ -12,8 +12,11 @@
 
 ((pressExchange) => {
     function showColumns() {
+        document.getElementById('container').style.display = 'none';
+        document.getElementById('balances').style.display = 'none';
         document.getElementById('exchangeColumns').style.display = 'unset';
         document.getElementById('shopColumns').style.display = 'none';
+
         document.getElementById('operator1').style.display = 'none';
         document.getElementById('operator2').style.display = 'none';
         document.getElementById('operator3').style.display = 'none';
@@ -39,12 +42,26 @@
 
 ((pressShop) => {
     function showShop () {
+        document.getElementById('container').style.display = 'none';
+        document.getElementById('balances').style.display = 'none',
+        document.getElementById('exchangeColumns').style.display = 'none',
         document.getElementById('shopColumns').style.display = 'unset'
-        document.getElementById('exchangeColumns').style.display = 'none';
     }
 
     let shopButton = document.getElementById('shop');
-    shopButton.addEventListener('click', showShop)
+    shopButton.addEventListener('click', showShop);
+})();
+
+((pressProfile) =>{
+    function showProfile () {
+        document.getElementById('container').style.display = 'unset';
+        document.getElementById('balances').style.display = 'unset';
+        document.getElementById('exchangeColumns').style.display = 'none';
+        document.getElementById('shopColumns').style.display = 'none';
+    }
+
+    let profileButton = document.getElementById('profile');
+    profileButton.addEventListener('click', showProfile);
 })();
 
 ((calcKco) => {

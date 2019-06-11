@@ -1,6 +1,6 @@
 <html lang="en">
 
-<p id="dateButton" ></p>
+<p id="dateButton"></p>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +22,17 @@
     <button id="exchange" type="button">Exchange | Buying</button>
     <button id="shop" type="button">Shop | Spend</button><br>
 
-        <div class="container">
-            <div class="sitewidth">
-                <marquee>
-                    <ul class="rates">
-                        <li> KasiCoins (kCO) currently trading at 7.5876 </li>
-                        <li> HoodCoins (hCO) currently trading at 0.8941 </li>
-                        <li> BurbCoins (bCO) currently trading at 0.7938 </li>
-                    </ul>
-                </marquee>
-            </div>
+    <div class="ratesContainer">
+        <div class="sitewidth">
+            <marquee>
+                <ul class="rates">
+                    <li> KasiCoins (kCO) currently trading at 7.5876 </li>
+                    <li> HoodCoins (hCO) currently trading at 0.8941 </li>
+                    <li> BurbCoins (bCO) currently trading at 0.7938 </li>
+                </ul>
+            </marquee>
         </div>
+    </div>
 
 
     <div id="exchangeColumns">
@@ -121,6 +121,52 @@
             <a href="">Click here</a>
         </div>
     </div>
+
+    <div id="container">
+        <div id="container1">
+            <img class="user-icon" src="img/user-icon.png">
+            <form id="user-profile">
+                <input type="text" id="firstname" placeholder="First Name"><br>
+                <input type="text" id="lastname" placeholder="Last Name"><br>
+                <input type="text" id="emailAdress" placeholder="Email Address">
+            </form>
+        </div>
+    </div>
+
+    <div id="balances">
+        <div id="KcoBalance">
+            <h4>Kasi Coins</h4>
+            <p>Avaliable: 18765.98</p>
+            <a href="">Click here</a>
+        </div>
+        <div id="HcoBalance">
+            <h4>Hood Coins</h4>
+            <p>Avaliable: 6353.19</p>
+            <a href="">Click here</a>
+        </div>
+        <div id="BcoBalance">
+            <h4>Burb Coins</h4>
+            <p>Avaliable: 22241.45</p>
+            <a href="">Click here</a>
+        </div><br>
+
+        <div id="bitCoBalance">
+            <h4>Bit Coins</h4>
+            <p>Avaliable: 7564.20</p>
+            <a href="">Click here</a>
+        </div>
+        <div id="liteBalance">
+            <h4>Lite Coins</h4>
+            <p>Avaliable: 234.00</p>
+            <a href="">Click here</a>
+        </div>
+        <div id="lunoBalance">
+            <h4>Luno Coins</h4>
+            <p>Avaliable: 716.82</p>
+            <a href="">Click here</a>
+        </div>
+    </div>
+
     <script type="text/javascript" src="index.js"></script>
 </body>
 

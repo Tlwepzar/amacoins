@@ -51,7 +51,7 @@ button {
     margin: 10% 0 0 2%;
 }
 
-.container {
+.ratesContainer {
     width: 50%;
     margin: 1% 0 0 25%;
     border-radius: 5px;
@@ -168,6 +168,109 @@ input {
     background-color: #ffffff1e;
 }
 
+#container {
+    clear: both;
+    display: none;
+    width: 25%;
+    margin:5% 0 0 5%;
+    background-color: #ffffff54;
+}
+
+img{
+    height: 20%;
+    margin: 2% 0 5% 8%;
+}
+
+#container1 {
+    float: left;
+    width: 20%;
+    margin:5% 3% 0 10%;
+    padding: 1.5%;
+    text-align: center;
+    background-color: #ffffff54;
+}
+  
+#container1 input {
+    float: none;
+    width: 80%;
+    margin-block-end: 4%;
+    border-radius: 5px;
+    text-emphasis: bold;
+    height: 5%;
+    text-align: center;
+    clear: both;
+    background-color: #ffffffc7;
+}
+
+#balances{
+    display: none;
+}
+
+#KcoBalance{
+    width: 18%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    margin-right: 1.5%;
+    height: 11em;
+    background-color: #ffffff54;
+}
+
+#HcoBalance{
+    width: 18%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    margin-right: 1.5%;
+    height: 11em;
+    background-color: #ffffff54;
+}
+
+#BcoBalance{
+    width: 18%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    margin-right: 1.5%;
+    height: 11em;
+    background-color: #ffffff54;
+}
+
+#bitCoBalance{
+    width: 18%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    margin-right: 1.5%;
+    height: 11em;
+    background-color: #ffffff54;
+}
+
+#liteBalance{
+    width: 18%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    margin-right: 1.5%;
+    height: 11em;
+    background-color: #ffffff54;
+}
+
+#lunoBalance{
+    width: 18%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+    margin-right: 1.5%;
+    height: 11em;
+    background-color: #ffffff54;
+}
 /*
 .br-title {
     display: inline-block;
