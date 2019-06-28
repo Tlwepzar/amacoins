@@ -14,6 +14,7 @@ header {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 p {
     font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Ubuntu', 'Open Sans', 'Helvetica Neue';
 }
@@ -67,6 +68,13 @@ marquee {
     border-radius: 5px;
 }
 
+.rates{
+    height: 200%;
+    padding-top: 0.25%;
+    border-radius: 5px;
+    background-color: #ffffff1e;
+}
+
 li {
     display: inline-block;
     padding-right: 5em;
@@ -74,7 +82,7 @@ li {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: 2s;
+    animation-duration: 5s;
     border-radius: 5px;
 }
 
@@ -165,6 +173,51 @@ input {
 }
 
 #hair-salons:hover {
+    background-color: #ffffff1e;
+}
+
+#fashion {
+    width: 30%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.75% 0 0 4%;
+    height: 20%;
+    background-color: #ffffff54;
+    border-radius: 5px;
+}
+
+#fashion:hover {
+    background-color: #ffffff1e;
+}
+
+#techWare {
+    width: 30%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.75% 0 0 1%;
+    height: 20%;
+    background-color: #ffffff54;
+    border-radius: 5px;
+}
+
+#techWare:hover {
+    background-color: #ffffff1e;
+}
+
+#mobiServices {
+    width: 30%;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.75% 0 0 1%;
+    height: 20%;
+    background-color: #ffffff54;
+    border-radius: 5px;
+}
+
+#mobiServices:hover {
     background-color: #ffffff1e;
 }
 
