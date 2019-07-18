@@ -159,7 +159,7 @@
     
 })();
 
-(()=> {
+((buyKco)=> {
     function buying1() {
         let a = parseFloat(document.querySelector('#value1').value);
         let b = parseFloat(document.querySelector('#value2').value);
@@ -176,7 +176,7 @@
     buy1.addEventListener('click', buying1);
 })();
 
-(()=> {
+((buyHco)=> {
     function buying2(){
         let a = parseFloat(document.querySelector('#value3').value);
         let b = parseFloat(document.querySelector('#value4').value);
@@ -193,7 +193,7 @@
     buy2.addEventListener('click', buying2);
 })();
 
-(()=> {
+((buyBco)=> {
     function buying3() {
         let a = parseFloat(document.querySelector('#value5').value);
         let b = parseFloat(document.querySelector('#value6').value);
@@ -201,11 +201,20 @@
         
         if (a == 0){
             alert('Value can not be zero. Insert value')
-        } else{
+        } else {
             alert(`Transaction Sucessful \n\nThe current rate is ${b}% \n\n${c} burbCoins have been purchased \n\n${a} ZAR has been deducted on your credit card`);
         }
     }
 
     let buy3 = document.getElementById('buyButton3');
     buy3.addEventListener('click', buying3);
+})();
+
+(()=>{
+    function selling1(){
+        prompt('hello')
+    }
+
+    let sell1 = document.getElementById('sellButton1');
+    sell1.addEventListener('click', selling1);
 })();
