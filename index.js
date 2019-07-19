@@ -168,7 +168,7 @@
         if (a == 0){
             alert('Value can not be zero. Insert value')
         } else{
-            alert(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} kasiCoins have been purchased \n\n${a} ZAR has been deducted on your credit card`);
+            alert(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} kasiCoins have been purchased \n\nR${a} has been deducted on your credit card`);
         }
     }
 
@@ -185,7 +185,7 @@
         if (a == 0){
             alert('Value can not be zero. Insert value')
         } else{
-            alert(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} hoodCoins have been purchased \n\n${a} USD has been deducted on your credit card`);
+            alert(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} hoodCoins have been purchased \n\n$${a} has been deducted on your credit card`);
         }
     }
 
@@ -202,7 +202,7 @@
         if (a == 0){
             alert('Value can not be zero. Insert value')
         } else {
-            alert(`Transaction Sucessful \n\nThe current rate is ${b}% \n\n${c} burbCoins have been purchased \n\n${a} ZAR has been deducted on your credit card`);
+            alert(`Transaction Sucessful \n\nThe current rate is ${b}% \n\n${c} burbCoins have been purchased \n\nR${a} has been deducted on your credit card`);
         }
     }
 
@@ -210,11 +210,47 @@
     buy3.addEventListener('click', buying3);
 })();
 
-(()=>{
+((sellKco)=>{
     function selling1(){
-        prompt('hello')
+        let zarValue = 0;
+        let kcoQty = Number(prompt('How many kasi Coins do you want to sell?'));
+        let kcoRate = Number(parseFloat(document.querySelector('#value2').value));
+
+        let kcoCalc = kcoQty * kcoRate;
+
+        zarValue == kcoCalc ? alert('Transaction Cancelled') : alert(kcoQty + ' Kasi Coins Sold \n\nTransaction Successful \n\nYou have R' + kcoCalc + ' deposited into your account');
     }
 
     let sell1 = document.getElementById('sellButton1');
     sell1.addEventListener('click', selling1);
+})();
+
+((sellHco)=>{
+    function selling2(){
+        let usdValue = 0;
+        let hcoQty = Number(prompt('How many hood Coins do you want to sell?'));
+        let hcoRate = Number(parseFloat(document.querySelector('#value4').value));
+
+        let hcoCalc = hcoQty * hcoRate;
+
+        usdValue == hcoCalc ? alert('Transaction Cancelled') : alert(hcoQty + ' Hood Coins Sold \n\nTransaction Successful \n\nYou have $' + hcoCalc + ' deposited into your account');
+    }
+
+    let sell2 = document.getElementById('sellButton2');
+    sell2.addEventListener('click', selling2);
+})();
+
+((sellBco)=>{
+    function selling3(){
+        let zarValue = 0;
+        let bcoQty = Number(prompt('How many kasi Coins do you want to sell?'));
+        let bcoRate = Number(parseFloat(document.querySelector('#value6').value));
+
+        let bcoCalc = bcoQty * bcoRate;
+
+        zarValue == bcoCalc ? alert('Transaction Cancelled') : alert(bcoQty + ' Kasi Coins Sold \n\nTransaction Successful \n\nYou have R' + bcoCalc + ' deposited into your account');
+    }
+
+    let sell3 = document.getElementById('sellButton3');
+    sell3.addEventListener('click', selling3);
 })();
