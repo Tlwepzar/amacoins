@@ -243,12 +243,12 @@
 ((sellBco)=>{
     function selling3(){
         let zarValue = 0;
-        let bcoQty = Number(prompt('How many kasi Coins do you want to sell?'));
+        let bcoQty = Number(prompt('How many burb Coins do you want to sell?'));
         let bcoRate = Number(parseFloat(document.querySelector('#value6').value));
 
         let bcoCalc = bcoQty * bcoRate;
 
-        zarValue == bcoCalc ? alert('Transaction Cancelled') : alert(bcoQty + ' Kasi Coins Sold \n\nTransaction Successful \n\nYou have R' + bcoCalc + ' deposited into your account');
+        zarValue == bcoCalc ? alert('Transaction Cancelled') : alert(bcoQty + ' burb Coins Sold \n\nTransaction Successful \n\nYou have R' + bcoCalc + ' deposited into your account');
     }
 
     let sell3 = document.getElementById('sellButton3');
