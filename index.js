@@ -218,7 +218,7 @@
 
         let kcoCalc = kcoQty * kcoRate;
 
-        zarValue == kcoCalc ? alert('Transaction Cancelled') : alert(kcoQty + ' Kasi Coins Sold \n\nTransaction Successful \n\nYou have R' + kcoCalc + ' deposited into your account');
+        zarValue === kcoCalc ? alert('Transaction Cancelled') : alert(kcoQty + ' Kasi Coins Sold \n\nTransaction Successful \n\nYou have R' + kcoCalc + ' deposited into your account');
     }
 
     let sell1 = document.getElementById('sellButton1');
