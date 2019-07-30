@@ -21,6 +21,7 @@ p {
 
 a {
     text-decoration-line: none;
+    margin-bottom: 5mm;
 }
 
 body {
@@ -239,7 +240,7 @@ img{
     margin: 2% 0 5% 8%;
 }
 
-#container1 {
+#user-profile {
     float: left;
     width: 20%;
     margin:2% 3% 0 7.5%;
@@ -249,13 +250,13 @@ img{
     border-radius: 5px;
 }
   
-#container1 input {
+#user-profile input {
     float: none;
     width: 80%;
     margin-block-end: 4%;
     border-radius: 5px;
     text-emphasis: bold;
-    height: 5%;
+    height: 8mm;
     text-align: center;
     clear: both;
     background-color: #ffffffc7;
@@ -272,7 +273,7 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 2%;
     margin-right: 1.5%;
-    height: 24%;
+    height: 10rem;
     background-color: #ffffffa2;
     border-radius: 5px;
 }
@@ -284,7 +285,7 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 2%;
     margin-right: 1.5%;
-    height: 24%;
+    height: 10rem;
     background-color: #ffffffa2;
     border-radius: 5px;
 }
@@ -296,7 +297,7 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 2%;
     margin-right: 1.5%;
-    height: 24%;
+    height: 10rem;
     background-color: #ffffffa2;
     border-radius: 5px;
 }
@@ -308,7 +309,7 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1%;
     margin-right: 1.5%;
-    height: 24%;
+    height: 10rem;
     background-color: #ffffffa2;
     border-radius: 5px;
 }
@@ -320,7 +321,7 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1%;
     margin-right: 1.5%;
-    height: 24%;
+    height: 10rem;
     background-color: #ffffffa2;
     border-radius: 5px;
 }
@@ -332,7 +333,7 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1%;
     margin-right: 1.5%;
-    height: 24%;
+    height: 10rem;
     background-color: #ffffffa2;
     border-radius: 5px;
 }

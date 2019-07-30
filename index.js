@@ -170,6 +170,7 @@
         } else{
             alert(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} kasiCoins have been purchased \n\nR${a} has been deducted on your credit card`);
         }
+        console.log(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} kasiCoins have been purchased \n\nR${a} has been deducted on your credit card`);
     }
 
     let buy1 = document.getElementById('buyButton1');
@@ -187,6 +188,8 @@
         } else{
             alert(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} hoodCoins have been purchased \n\n$${a} has been deducted on your credit card`);
         }
+        console.log(`Transaction Sucessful \n\nThe current trade rate is ${b}% \n\n${c} hoodCoins have been purchased \n\n$${a} has been deducted on your credit card`);
+
     }
 
     let buy2 = document.getElementById('buyButton2');
@@ -204,6 +207,8 @@
         } else {
             alert(`Transaction Sucessful \n\nThe current rate is ${b}% \n\n${c} burbCoins have been purchased \n\nR${a} has been deducted on your credit card`);
         }
+        console.log(`Transaction Sucessful \n\nThe current rate is ${b}% \n\n${c} burbCoins have been purchased \n\nR${a} has been deducted on your credit card`);
+
     }
 
     let buy3 = document.getElementById('buyButton3');
@@ -219,6 +224,7 @@
         let kcoCalc = kcoQty * kcoRate;
 
         zarValue === kcoCalc ? alert('Transaction Cancelled') : alert(kcoQty + ' Kasi Coins Sold \n\nTransaction Successful \n\nYou have R' + kcoCalc + ' deposited into your account');
+        console.log(kcoQty +' kasi Coins were SOLD');
     }
 
     let sell1 = document.getElementById('sellButton1');
@@ -234,6 +240,7 @@
         let hcoCalc = hcoQty * hcoRate;
 
         usdValue == hcoCalc ? alert('Transaction Cancelled') : alert(hcoQty + ' Hood Coins Sold \n\nTransaction Successful \n\nYou have $' + hcoCalc + ' deposited into your account');
+        console.log(hcoQty +' hood Coins were SOLD');
     }
 
     let sell2 = document.getElementById('sellButton2');
@@ -249,6 +256,7 @@
         let bcoCalc = bcoQty * bcoRate;
 
         zarValue == bcoCalc ? alert('Transaction Cancelled') : alert(bcoQty + ' burb Coins Sold \n\nTransaction Successful \n\nYou have R' + bcoCalc + ' deposited into your account');
+        console.log(bcoQty +' burb Coins were SOLD');
     }
 
     let sell3 = document.getElementById('sellButton3');
